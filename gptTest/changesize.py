@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
+
 import os
 import shutil
-
 from PIL import Image, ImageTk
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
@@ -10,11 +11,11 @@ class ImageResizeApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Image Resize")
-        self.root.geometry("1280x650")  # 设置窗口初始大小
-
-        # 初始化图像大小调整参数
+        self.root.geometry("1280x650")  # 设置窗口初始大小        # 初始化图像大小调整参数
         self.width_var = tk.IntVar()
         self.height_var = tk.IntVar()
+
+
 
         # 初始化图像保存参数
         self.quality_var = tk.IntVar()
@@ -34,6 +35,10 @@ class ImageResizeApp:
         self.display_size = 400
 
     def create_widgets(self):
+        # 创建选择图像文本标签
+        self.select_label = tk.Label(self.root,
+                                     text="请选择输入图像，可填写想要的输出分辨率和选择保存类型，保存质量越低体积越小，点击预览可查看输出图像分辨率和体积")
+        self.select_label.pack(pady=10)
         # 创建文件选择按钮
         self.select_button = tk.Button(self.root, text="选择图片", command=self.load_image)
         self.select_button.pack(pady=10)

@@ -1,4 +1,4 @@
-('C:\\Users\\shukangwang\\Desktop\\gptTest\\build\\changesize\\PYZ-00.pyz',
+('C:\\Users\\shukangwang\\Desktop\\workspace\\pythonTools\\gptTest\\build\\changesize\\PYZ-00.pyz',
  [('PIL',
    'D:\\conda\\envs\\wsk\\lib\\site-packages\\PIL\\__init__.py',
    'PYMODULE'),
